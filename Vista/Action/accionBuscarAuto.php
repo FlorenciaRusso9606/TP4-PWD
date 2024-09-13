@@ -55,7 +55,7 @@ if ($objAuto !== null) {
         <?php
         echo "<table class='table'".$salida. "</table>";
         ?>
-            <button class="btn btn-primary"><a href="../BuscarAuto.php"> Volver</a></button>
+            <button class="btn btn-primary"><a href="../BuscarAuto.php" class="btn btn-primary"> Volver</a></button>
     </main>
 
     <!-- Footer -->

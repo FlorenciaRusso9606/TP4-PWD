@@ -23,7 +23,12 @@ if (isset($datos['nroDni'])) {
     <title>Cambiar Datos Persona</title>
 </head>
 <body>
-    <?php
+    
+     <?php include_once("../Estructura/Navbar.php"); ?>
+
+
+     <main class="container my-5">
+     <?php
     if ($objPersona !== null) {
         $salida = '
         <form action="ActualizarDatosPersona.php" method="post">
@@ -41,5 +46,8 @@ if (isset($datos['nroDni'])) {
         echo "<p>No se encontró ninguna persona con el DNI proporcionado.</p>";
     }
     ?>
+    </main>
+    <button class="btn btn-primary"><a href="../BuscarPersona.php" class="btn btn-primary"> Volver</a></button>
+    <?php include_once("../Estructura/Footer.php"); ?>
 </body>
 </html>

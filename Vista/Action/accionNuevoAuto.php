@@ -37,7 +37,15 @@ if (isset($datos)) {
 </head>
 
 <body>
+<?php include_once("../Estructura/Navbar.php"); ?>
+
+
+<main class="container my-5">
     <?php echo "<p>$mensaje</p>"; ?>
+    
+    <button class="btn btn-primary"><a href="../NuevoAuto.php" class="btn btn-primary"> Volver</a></button>
+    </main>
+    <?php include_once("../Estructura/Footer.php"); ?>
 </body>
 
 </html>
